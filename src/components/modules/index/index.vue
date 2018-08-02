@@ -1,13 +1,7 @@
 <template>
   <div class="module-index ">
-    <div class="width-25 float-left">
-      &nbsp;
-    </div>
-     <div class="width-50 float-left">
+     <div>
       <module-article-scroll-page></module-article-scroll-page>
-    </div>
-     <div class="width-25 float-left" >
-      &nbsp;
     </div>
   </div>
 </template>

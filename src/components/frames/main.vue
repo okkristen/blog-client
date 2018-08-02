@@ -7,7 +7,15 @@
     </div>
     <div class="main">
      <div class="main-content">
-        <router-view/>
+       <div class="width-25 float-left">
+          &nbsp;
+        </div>
+        <div class="width-50 float-left">
+            <router-view/>
+        </div>
+        <div class="width-25 float-left" >
+          &nbsp;
+        </div>
      </div>
     </div>
     <div class="footer">

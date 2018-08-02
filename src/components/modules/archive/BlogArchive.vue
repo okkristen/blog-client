@@ -1,7 +1,6 @@
 <template>
-  <div v-title :data-title="title">
-    <el-container>
-      <el-aside class="me-area">
+  <div>
+    <div class="width-15 float-left">
         <ul class="me-month-list">
           <li v-for="a in archives" :key="a.year + a.month" class="me-month-item">
             <el-badge :value="a.count">
@@ -10,12 +9,11 @@
             </el-badge>
           </li>
         </ul>
-      </el-aside>
-      <el-main class="me-articles">
-        <div class="me-month-title">{{currentArchive}}</div>
-        <module-article-scroll-page v-bind="article"></module-article-scroll-page>
-      </el-main>
-    </el-container>
+        </div>
+        <div class="width-85 float-left">
+            <div class="me-month-title">{{currentArchive}}</div>
+          <module-article-scroll-page v-bind="article"></module-article-scroll-page>
+        </div>
   </div>
 
 </template>
