@@ -47,17 +47,13 @@
     </el-row> -->
     <el-row class="width-100 height-100">
         <el-col :span="6">
-        <!-- <router-link to="/">
-            <div class="nameClass">ok克里斯汀</div>
-        </router-link> -->
+          &nbsp;
       </el-col>
-      <el-col :span="12" :offset="6">
+      <el-col :span="12">
           <module-menu></module-menu>
       </el-col>
       <el-col :span="6">
-        <!-- <router-link to="/">
-            <div class="nameClass">ok克里斯汀</div>
-        </router-link> -->
+        &nbsp;
       </el-col>
     </el-row>
     </div>

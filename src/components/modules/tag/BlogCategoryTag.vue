@@ -1,5 +1,5 @@
 <template>
-  <div class="me-ct-body">
+  <div class="module-blog-category-tag">
     <el-container class="me-ct-container">
       <el-main>
         <div class="me-ct-title">
@@ -34,7 +34,7 @@
 import defaultAvatar from '@/assets/img/logo.png'
 // import web from '@/components/app/config/website'
 export default {
-  name: 'BlogCategoryTag',
+  name: 'module-blog-category-tag',
   created () {
     // this.getCategoryOrTagAndArticles()
     this.ct = {
@@ -127,7 +127,7 @@ export default {
 </script>
 
 <style>
-  .me-ct-body {
+  /* .me-ct-body {
     margin: 60px auto 140px;
     min-width: 100%;
   }
@@ -159,6 +159,5 @@ export default {
   .me-ct-articles {
     width: 640px;
     margin: 30px auto;
-  }
-
+  } */
 </style>

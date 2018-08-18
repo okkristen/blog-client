@@ -9,9 +9,13 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import '@/assets/theme/index.css'
 import '@/assets/icon/iconfont.css'
+import config from '$config'
 Vue.use(ElementUI)
 Vue.config.productionTip = false
-
+// 加载测试数据，正式环境或者联调时去除！
+if (config.enableMock) {
+  require('@/data/mock-data.js')
+}
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

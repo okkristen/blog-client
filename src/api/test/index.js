@@ -3,7 +3,7 @@ import CommonApi from 'api/common.js'
 const api = {
   findOne (data) {
     console.log('发送')
-    return CommonApi.post('articles/new', data)
+    return CommonApi.post('areaExamine/findAll', data)
   }
 }
 export default api

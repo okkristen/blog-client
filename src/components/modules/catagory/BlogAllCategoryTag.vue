@@ -1,5 +1,5 @@
 <template>
-  <div class="me-allct-body" v-title :data-title="categoryTagTitle" >
+  <div class="module-blog-all-category-tag" >
     <el-container class="me-allct-container">
       <el-main>
         <el-tabs v-model="activeName">
@@ -28,7 +28,6 @@
                     <img class="me-allct-img" :src="t.avatar"/>
                     <h4 class="me-allct-name">{{t.tagname}}</h4>
                   </a>
-
                   <div class="me-allct-meta">
                     <span>{{t.articles}} 文章</span>
                   </div>
@@ -48,10 +47,8 @@
 // import {getAllTagsDetail} from '@/api/tag'
 // import web from '@/components/app/config/website'
 export default {
-  name: 'BlogAllCategoryTag',
+  name: 'module-blog-all-category-tag',
   created () {
-    // this.getCategorys()
-    // this.getTags()
   },
   data () {
     return {
@@ -142,7 +139,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .me-allct-body {
     margin: 60px auto 140px;
   }
@@ -155,7 +152,7 @@ export default {
     padding-top: 2rem;
   }
 
-  .me-allct-item {
+  .module-blog-all-category-tag >>>.me-allct-item {
     width: 25%;
     display: inline-block;
     margin-bottom: 2.4rem;

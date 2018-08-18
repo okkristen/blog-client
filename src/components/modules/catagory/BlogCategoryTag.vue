@@ -124,7 +124,7 @@
 </script>
 
 <style>
-  .me-ct-body {
+  /* .me-ct-body {
     margin: 60px auto 140px;
     min-width: 100%;
   }
@@ -156,6 +156,6 @@
   .me-ct-articles {
     width: 640px;
     margin: 30px auto;
-  }
+  } */
 
 </style>
