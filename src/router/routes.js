@@ -47,6 +47,10 @@ module.exports = [
         component: resolve => require(['~/modules/log/Log.vue'], resolve)
       },
       {
+        path: '/aboutMe',
+        component: resolve => require(['~/modules/aboutMe/aboutMe.vue'], resolve)
+      },
+      {
         path: '/messageBoard',
         component: resolve => require(['~/modules/messageBoard/MessageBoard.vue'], resolve)
       },
