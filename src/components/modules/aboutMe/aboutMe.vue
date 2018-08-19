@@ -387,4 +387,7 @@ export default {
        界面设计丑了点,欢迎star和issue
        能提供好看的设计图那更是感激不尽!!!!
      ------------------------------------*/
+     li {
+       list-style-type:none;
+     }
 </style>
