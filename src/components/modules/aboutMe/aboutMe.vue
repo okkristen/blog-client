@@ -209,6 +209,9 @@ export default {
     .section-left p{
         font-size: 0.5rem;
     }
+    .section-left li {
+      list-style: none;
+    }
     /* 头部信息
     ------------------------------------*/
     .section-left .head{
@@ -387,7 +390,4 @@ export default {
        界面设计丑了点,欢迎star和issue
        能提供好看的设计图那更是感激不尽!!!!
      ------------------------------------*/
-     li {
-       list-style-type:none;
-     }
 </style>
