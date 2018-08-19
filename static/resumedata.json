@@ -22,82 +22,78 @@
     "blog":""
   },
   "workExperience":{
-    "time":"2016-10 至 今",
+    "time":"工作时间",
     "experience":[
       {
-        "name":"网页游戏bong精灵",
-        "skill":"gulp+scss+zepto",
+        "name":"工作经验",
+        "skill":"工作技能",
         "time":"",
         "describe":[
-          "bong精灵可以根据用户消耗的卡路里换取食物进行喂养,有食物商店,宠物商店,宠物PK,精灵分享等",
-          "使用gulp构建项目,实现浏览器热刷新,js、css压缩合并,图片压缩处理等项目自动打包处理",
-          "使用flexible.js实现移动端屏幕适配问题"
+          "工作描述1",
+          "工作描述1",
+          "工作描述1"
         ]
       },
       {
-        "name":"微信公众号活动页",
-        "skill":"vue.js+vue-route+nodeJs",
-        "time":"",
-        "describe":[
-          "基于微信公众号的网页活动,实现用户活动分享,用户活动查看好友记录等",
-          "使用vue框架完成项目前端开发,使用nodeJs完成项目后端开发",
-          "项目服务器部署,项目后期维护和运维"
+        "name": "工作经验",
+        "skill": "工作技能",
+        "time": "",
+        "describe": [
+          "工作描述1",
+          "工作描述1",
+          "工作描述1"
         ]
       }
     ]
   },
   "projectExperience":{
-    "time":"",
+    "time": "项目时间",
     "experience":[
       {
-        "name":"轻量级Dom操作库-zBase.js",
-        "skill":"轻量级,无依赖",
-        "time":"2016.9",
+        "name":"项目名称",
+        "skill":"项目技能",
+        "time":"项目时间",
         "describe":[
-          "轻量级Dom操作库,可类似于jquery操作dom",
-          "无依赖,支持AMD,CMD加载",
-          "项目链接: https://github.com/ZengTianShengZ/zBase"
+          "项目描述",
+          "项目描述",
+          "项目描述"
         ]
       },
       {
-        "name":"React项目构建三部曲",
-        "skill":"react+react-Redux+react-router+ES6",
-        "time":"2017.3",
-        "describe":[
-          "构建适合React项目开发的脚手架"
+        "name": "项目名称",
+        "skill": "项目技能",
+        "time": "项目时间",
+        "describe": [
+          "项目描述",
+          "项目描述",
+          "项目描述"
         ]
       }
     ]
   },
   "skill":[
     {
-      "type":"构建工具",
+      "type":"技能类型",
       "describe":[
-        "熟练使用gulp,webpack构建项目"
+        "技能类型描述"
       ]
     },
     {
-      "type":"框架",
-      "describe":[
-        "熟悉 jQuery,Bootstrap",
-        "熟练使用vue完成复杂交互的开发",
-        "了解react"
+      "type": "技能类型",
+      "describe": [
+        "技能类型描述"
       ]
     },
     {
-      "type":"-",
-      "describe":[
-        "熟悉 js,能使用原生js完成一般项目的开发",
-        "熟悉css,scss,以及css3的以下新特性",
-        "熟悉 html5,能写出语义化网页",
-        "熟悉网页优化",
-        "了解网络安全,懂得项目运维"
+      "type": "技能类型",
+      "describe": [
+        "技能类型描述"
       ]
     }
   ],
   "selfAssessment":[
-    "   鲁迅先生曾说过:世上本没有路,走的人多了便成了路",
-    "每错,点击左上角,欢迎 star "
+    " 个人评价",
+    "个人评价 "
   ]
 
 }
