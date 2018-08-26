@@ -1,10 +1,10 @@
 <template>
-  <div class="me-view-body" v-title :data-title="title">
+  <div class="me-view-body">
     <el-container class="me-view-container">
       <el-main>
         <div class="me-view-card">
           <h1 class="me-view-title">{{article.title}}</h1>
-          <div class="me-view-author">
+          <!-- <div class="me-view-author">
             <a class="">
               <img class="me-view-picture" :src="article.author.avatar" />
             </a>
@@ -15,21 +15,19 @@
                 <span>阅读   {{article.viewCounts}}</span>
                 <span>评论   {{article.commentCounts}}</span>
               </div>
-
             </div>
             <el-button
-              v-if="true"
+              v-if="false"
               @click="editArticle()"
               style="position: absolute;left: 60%;"
               size="mini"
               round
               icon="el-icon-edit">编辑</el-button>
+          </div> -->
+          <div class="me-view-content" v-html="article.body.content">
+            <!-- <plugin-markdown-editor :editor=article.editor>
+            </plugin-markdown-editor> -->
           </div>
-          <div class="me-view-content">
-            <plugin-markdown-editor :editor=article.editor>
-            </plugin-markdown-editor>
-          </div>
-
           <div class="me-view-end">
             <el-alert
               title="文章End..."
@@ -38,7 +36,6 @@
               :closable="false">
             </el-alert>
           </div>
-
           <div class="me-view-tag">
             标签：
             <!--<el-tag v-for="t in article.tags" :key="t.id" class="me-view-tag-item" size="mini" type="success">{{t.tagname}}</el-tag>-->
@@ -51,7 +48,7 @@
             <el-button @click="tagOrCategory('category', article.category.id)" size="mini" type="primary" round plain>{{article.category.categoryname}}</el-button>
           </div>
 
-          <div class="me-view-comment">
+          <!-- <div class="me-view-comment">
             <div class="me-view-comment-write">
               <el-row :gutter="20">
                 <el-col :span="2">
@@ -92,7 +89,7 @@
               :key="c.id">
             </module-comment-item>
 
-          </div>
+          </div> -->
 
         </div>
       </el-main>
@@ -118,10 +115,10 @@ export default {
       author: {
         avatar: '/user/admin.png',
         id: 1,
-        nickname: '史明辉'
+        nickname: '杨思静'
       },
       body: {
-        content: '## 快速上手↵↵本节将介绍如何在项目中使用 Element。↵↵### 使用 Starter Ki…组件，以达到减小项目体积的目的。↵↵首先，安装 babel-plugin-component：↵↵',
+        content: '测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容测试内容',
         id: 21
       },
       category: {
@@ -245,9 +242,9 @@ export default {
 </script>
 
 <style>
-  .me-view-body {
+  /* .me-view-body {
     margin: 100px auto 140px;
-  }
+  } */
 
   .me-view-container {
     width: 700px;
@@ -296,7 +293,7 @@ export default {
   .me-view-tag {
     margin-top: 20px;
     padding-left: 6px;
-    border-left: 4px solid #c5cac3;
+    /* border-left: 4px solid #c5cac3; */
   }
 
   .me-view-tag-item {
