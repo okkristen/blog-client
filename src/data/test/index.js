@@ -138,7 +138,8 @@ const scoreData = {
     ]
 }
 Mock.mock('/areaExamine/findAll', (options) => {
-    return options
+    console.log('option', options)
+    return scoreData
 })
 Mock.mock('/areaExamine/findOne', (options) => {
   let result = listData.filter(item => {
