@@ -5,7 +5,7 @@
  * @module  data
  */
 require('./test')
-// require('./module/index')
+require('./module/article')
 // require('./module/ranking')
 // require('./module/map')
 // require('./module/news')

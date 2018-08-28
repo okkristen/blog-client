@@ -7,7 +7,7 @@
 </template>
 
 <script>
-// import api from 'api/modules/article'
+import api from 'api/modules/article'
 export default {
   name: 'module-article-scroll-page',
   props: {
@@ -49,7 +49,7 @@ export default {
     }
   },
   created () {
-    // this.getArticles()
+    this.getArticles()
   },
   data () {
     return {
@@ -86,6 +86,14 @@ export default {
       this.$router.push({path: `/view/${id}`})
     },
     getArticles () {
+      let vm = this
+      vm.loading = true
+      api.findPage({}).then(res => {
+        console.log('res', res)
+        vm.loading = false
+        console.log('res.data', res.data)
+        vm.articles = JSON.parse(res).data
+      })
     }
   },
   components: {

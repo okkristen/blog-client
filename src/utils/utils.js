@@ -179,5 +179,12 @@ export default {
         }
         meteorGenerator()
         frame()
+    },
+    resultData (result) {
+      let obj = {
+        'resNo': 0,
+        'data': result
+      }
+      return JSON.parse(JSON.stringify(obj))
     }
 }

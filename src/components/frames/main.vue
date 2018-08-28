@@ -8,13 +8,13 @@
     <div class="main">
      <div class="main-content">
        <div class="width-25 float-left">
-          &nbsp;
+            &nbsp;
         </div>
         <div class="width-50 float-left">
             <router-view/>
         </div>
         <div class="width-25 float-left" >
-          &nbsp;
+            &nbsp;
         </div>
      </div>
     </div>
@@ -39,7 +39,7 @@ export default {
     // this.mainStyle.height = a.clientHeight - 60 - 60 - 60 + 'px'
     // util.createCanvas()
     api.findOne().then(res => {
-      console.log('res', res)
+      // console.log('res', res.data)
     })
   },
   components: {

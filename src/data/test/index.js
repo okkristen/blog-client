@@ -3,7 +3,7 @@
  */
 /* eslint-disable */
 var Mock = require('mockjs')
-// import CommonUtils from 'utils/CommonUtils'
+import util from 'utils/utils'
 // 模拟数据
 var listData = [
     {
@@ -139,7 +139,7 @@ const scoreData = {
 }
 Mock.mock('/areaExamine/findAll', (options) => {
     console.log('option', options)
-    return scoreData
+    return util.resultData(scoreData)
 })
 Mock.mock('/areaExamine/findOne', (options) => {
   let result = listData.filter(item => {
