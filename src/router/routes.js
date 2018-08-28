@@ -31,7 +31,8 @@ module.exports = [
     children: [
       {
         path: '/',
-        component: resolve => require(['~/modules/index/index.vue'], resolve)
+        component: resolve => require(['~/modules/aboutMe/aboutMe.vue'], resolve)
+        // component: resolve => require(['~/modules/index/index.vue'], resolve)
       },
       {
         path: '/:type/all',

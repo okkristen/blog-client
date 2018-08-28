@@ -161,26 +161,4 @@ export default {
 </script>
 
 <style scoped>
-    #show-resume{
-        float: left;
-        width: 100%;
-        height: 100%;
-        background: #ffffff;
-        padding: 1rem 2rem;
-        overflow: auto;
-        box-sizing: border-box;
-    }
-    .resume-content{
-        width: 100%;
-        height: 99%;
-        box-shadow: 0 4px 12px 0 rgba(0,0,0,0.5);
-        overflow: auto;
-        background: rgb(249,249,249);
-    }
-    .resume-content::-webkit-scrollbar {
-         display: none;
-     }
-</style>
-
-<style scoped>
 </style>
