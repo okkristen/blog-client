@@ -7,7 +7,7 @@
     </div>
     <div class="main">
      <div class="main-content">
-       <div class="width-25 float-left">
+       <!-- <div class="width-25 float-left">
             &nbsp;
         </div>
         <div class="width-50 float-left">
@@ -15,7 +15,14 @@
         </div>
         <div class="width-25 float-left" >
             &nbsp;
-        </div>
+        </div> -->
+        <el-row>
+           <el-col :span="14" :offset="5">
+              <router-view/>
+           </el-col>
+            <el-col :span="5">
+            </el-col>
+        </el-row>
      </div>
     </div>
     <div class="footer">
