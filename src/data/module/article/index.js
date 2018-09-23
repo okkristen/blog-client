@@ -8,14 +8,23 @@ import util from 'utils/utils'
 var listData = [
   {
     author: {
-        nickname: '史明辉'
+        nickname: ''
     },
     commentCounts: 0,
     createDate: '2018.02.01 14:47',
     id: 10,
-    summary: '本节将介绍如何在项目中使用 Element。',
-    tags: [{ tagname: 'vue' }],
-    title: 'Element相关',
+    summary: `public void setXxxList(List<Xxx> xxxList) {
+      if (this.xxxList != null && this.xxxList != xxxList) {
+          this.xxxList.clear();
+         if (this.xxxList != null) { 
+         this.xxxList.addAll(xxxList);      
+        }
+      } else {
+        this.xxxList = xxxList;
+      }
+}`,
+    tags: [{ tagname: 'java' }],
+    title: 'JPA 级联更新去孤子',
     viewCounts: 4,
     weight: 0
   }

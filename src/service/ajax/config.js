@@ -78,7 +78,8 @@ export default {
       }
       handleResult(data, router)
     }
-    return data
+    console.log('测试机哦')
+    return JSON.parse(data)
   }],
   // `headers` 是即将被发送的自定义请求头
   headers: {

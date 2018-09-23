@@ -1,8 +1,6 @@
 <template>
   <div class="module-index ">
-     <div>
       <module-article-scroll-page></module-article-scroll-page>
-    </div>
   </div>
 </template>
 

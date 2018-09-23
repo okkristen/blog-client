@@ -49,7 +49,7 @@ module.exports = [
       },
       {
         path: '/aboutMe',
-        component: resolve => require(['~/modules/aboutMe/aboutMe.vue'], resolve)
+        component: resolve => require(['~/modules/aboutMe/about.vue'], resolve)
       },
       {
         path: '/messageBoard',

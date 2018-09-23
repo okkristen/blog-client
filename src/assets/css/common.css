@@ -70,3 +70,36 @@ html,body{
   .float-left{
     float: left;
   }
+  .opacity0 {
+    opacity: 0
+  }
+  .opacity1 {
+    opacity: 1
+  }
+  .height25 {
+    height: 25px;
+  }
+  .height50 {
+    height: 50px;
+  }
+  .height75 {
+    height: 75px;
+  }
+  .height100 {
+    height: 100px;
+  }
+  .width25 {
+    width: 25px;
+  }
+  .width50 {
+    width: 50px;
+  }
+  .width75 {
+    width: 75px;
+  }
+  .width100 {
+    width: 100px;
+  }
+  .margin_auto {
+    margin: auto;
+  }

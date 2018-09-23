@@ -7,15 +7,13 @@
     </div>
     <div class="main">
      <div class="main-content">
-       <!-- <div class="width-25 float-left">
-            &nbsp;
-        </div>
-        <div class="width-50 float-left">
-            <router-view/>
-        </div>
-        <div class="width-25 float-left" >
-            &nbsp;
-        </div> -->
+       <el-row>
+           <el-col :span="14" :offset="5">
+              <module-my-info></module-my-info>
+           </el-col>
+            <el-col :span="5">
+            </el-col>
+        </el-row>
         <el-row>
            <el-col :span="14" :offset="5">
               <router-view/>
@@ -51,7 +49,8 @@ export default {
   },
   components: {
     'module-footer': () => import('./module/footer.vue'),
-    'module-header': () => import('./module/header.vue')
+    'module-header': () => import('./module/header.vue'),
+    'module-my-info': () => import('./module/myInfo.vue')
   },
   beforeRouteEnter (to, from, next) {
     next(vm => {

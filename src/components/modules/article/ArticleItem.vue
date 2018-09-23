@@ -4,11 +4,11 @@
 
       <a @click="view(id)" class="me-article-title">{{title}}</a>
       <el-button v-if="weight > 0" class="me-article-icon" type="text">置顶</el-button>
-      <span class="me-pull-right me-article-count"><i class="me-icon-comment"></i>&nbsp;{{commentCounts}}</span>
-      <span class="me-pull-right me-article-count"><i class="el-icon-view"></i>&nbsp;{{viewCounts}}</span>
+      <!-- <span class="me-pull-right me-article-count"><i class="me-icon-comment"></i>&nbsp;{{commentCounts}}</span> -->
+      <!-- <span class="me-pull-right me-article-count"><i class="el-icon-view"></i>&nbsp;{{viewCounts}}</span> -->
     </div>
       <div class="me-artile-description">
-        {{summary}}
+        <plugin-code-style :code="summary"></plugin-code-style>
       </div>
       <div class="me-article-footer">
           <span class="me-article-author">

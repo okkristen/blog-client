@@ -64,14 +64,14 @@ export default {
       articles: [
         {
           author: {
-            nickname: '史明辉'
+            nickname: ''
           },
           commentCounts: 0,
           createDate: '2018.02.01 14:47',
           id: 10,
-          summary: '本节将介绍如何在项目中使用 Element。',
+          summary: '',
           tags: [{tagname: 'vue'}],
-          title: 'Element相关',
+          title: 'jpa相关',
           viewCounts: 4,
           weight: 0
         }
@@ -92,7 +92,7 @@ export default {
         console.log('res', res)
         vm.loading = false
         console.log('res.data', res.data)
-        vm.articles = JSON.parse(res).data
+        vm.articles = res.data
       })
     }
   },
