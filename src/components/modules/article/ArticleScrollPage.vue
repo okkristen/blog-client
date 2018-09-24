@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import api from 'api/modules/article'
-// import $api from '$api/table/article'
+// import api from 'api/modules/article'
+import $api from '$api/table/article'
 export default {
   name: 'module-article-scroll-page',
   props: {
@@ -133,21 +133,21 @@ export default {
     getArticles () {
       let vm = this
       vm.loading = true
-      api.findPage({}).then(res => {
-        console.log('res', res)
-        vm.loading = false
-        console.log('res.data', res.data)
-        vm.articles = res.data
-      })
-      // $api.findPage().then(function (res) {
+      // api.findPage({}).then(res => {
+      //   console.log('res', res)
       //   vm.loading = false
-      //   console.log('findPage.res.id', res.id)
-      //   console.log('findPage.res', res)
-      //   console.log('findPage.data', JSON.parse(JSON.stringify(res)))
-      //   vm.articles = JSON.parse(JSON.stringify(res))
-      // }, function (error) {
-      //   console.error('Failed to create new object, with error message: ' + error.message)
+      //   console.log('res.data', res.data)
+      //   vm.articles = res.data
       // })
+      $api.findPage().then(function (res) {
+        vm.loading = false
+        console.log('findPage.res.id', res.id)
+        console.log('findPage.res', res)
+        console.log('findPage.data', JSON.parse(JSON.stringify(res)))
+        vm.articles = JSON.parse(JSON.stringify(res))
+      }, function (error) {
+        console.error('Failed to create new object, with error message: ' + error.message)
+      })
     }
   },
   components: {
