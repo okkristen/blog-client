@@ -40,6 +40,7 @@ module.exports = {
       'assets': resolve('src/assets'),
       '~': resolve('src/components/'),
       'api': resolve('src/api'),
+      '$api': resolve('src/leancloud'),
       // 'service': resolve('src/service'),
       'utils': resolve('src/utils'),
       '$config': resolve('src/config'),

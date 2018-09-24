@@ -19,6 +19,7 @@ Vue.config.productionTip = false
 if (config.enableMock) {
   require('@/data/mock-data.js')
 }
+require('@/leancloud/leancloud-data.js')
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import $api from '$api/table/user'
 export default {
   name: 'Index',
   created () {
@@ -45,6 +46,10 @@ export default {
     }
   },
   methods: {
+  },
+  mounted () {
+    let todo = $api.save({})
+    console.log('测试', todo)
   },
   components: {
     'module-article-scroll-page': () => import('~/modules/article/ArticleScrollPage.vue')

@@ -7,7 +7,8 @@
 </template>
 
 <script>
-import api from 'api/modules/article'
+// import api from 'api/modules/article'
+import $api from '$api/table/article'
 export default {
   name: 'module-article-scroll-page',
   props: {
@@ -49,7 +50,51 @@ export default {
     }
   },
   created () {
+    // let vm = this
     this.getArticles()
+    // $api.save().then(res => {
+    //   console.log('res', res.id)
+    //   console.log('data', JSON.parse(JSON.stringify(res))
+    // })
+    // 保存
+    // $api.save().then(function (res) {
+    //   console.log('res', res.id)
+    //   console.log('data', JSON.parse(JSON.stringify(res)))
+    // }, function (error) {
+    //   console.error('Failed to create new object, with error message: ' + error.message)
+    // })
+    // 查询单个
+    // $api.findOne().then(function (res) {
+    //   console.log('findOne.res.id', res.id)
+    //   console.log('findOne.res', res)
+    //   console.log('findOne.data', JSON.parse(JSON.stringify(res)))
+    // }, function (error) {
+    //   console.error('Failed to create new object, with error message: ' + error.message)
+    // })
+    // 查询分页 --- 暂时没用
+    // $api.findPage().then(function (res) {
+    //   console.log('findPage.res.id', res.id)
+    //   console.log('findPage.res', res)
+    //   console.log('findPage.data', JSON.parse(JSON.stringify(res)))
+    //   vm.articles = JSON.parse(JSON.stringify(res))
+    // }, function (error) {
+    //   console.error('Failed to create new object, with error message: ' + error.message)
+    // })
+    // 更新
+    // $api.update({viewCounts: 9}).then(function (res) {
+    //   console.log('update.res.id', res.id)
+    //   console.log('update.res', res)
+    //   console.log('update.data', JSON.parse(JSON.stringify(res)))
+    // }, function (error) {
+    //   console.error('Failed to create new object, with error message: ' + error.message)
+    // })
+    // $api.delete().then(function (res) {
+    //   console.log('delete.res.id', res.id)
+    //   console.log('delete.res', res)
+    //   console.log('delete.data', JSON.parse(JSON.stringify(res)))
+    // }, function (error) {
+    //   console.error('Failed to create new object, with error message: ' + error.message)
+    // })
   },
   data () {
     return {
@@ -88,11 +133,20 @@ export default {
     getArticles () {
       let vm = this
       vm.loading = true
-      api.findPage({}).then(res => {
-        console.log('res', res)
+      // api.findPage({}).then(res => {
+      //   console.log('res', res)
+      //   vm.loading = false
+      //   console.log('res.data', res.data)
+      //   vm.articles = res.data
+      // })
+      $api.findPage().then(function (res) {
         vm.loading = false
-        console.log('res.data', res.data)
-        vm.articles = res.data
+        console.log('findPage.res.id', res.id)
+        console.log('findPage.res', res)
+        console.log('findPage.data', JSON.parse(JSON.stringify(res)))
+        vm.articles = JSON.parse(JSON.stringify(res))
+      }, function (error) {
+        console.error('Failed to create new object, with error message: ' + error.message)
       })
     }
   },
