@@ -6,6 +6,13 @@
 
 <script>
 import $api from '$api/table/user'
+import { mapActions, mapGetters, mapMutations } from 'vuex'
+import {
+} from '$actions'
+import { GET_TYPE } from '$getters'
+import {
+  SET_TYPE
+} from '$mutations'
 export default {
   name: 'Index',
   created () {
@@ -46,10 +53,25 @@ export default {
     }
   },
   methods: {
+    ...mapActions([
+    ]),
+    ...mapMutations([
+      SET_TYPE
+    ])
+  },
+  computed: {
+    ...mapGetters({
+      type: GET_TYPE
+    })
+
   },
   mounted () {
     let todo = $api.save({})
     console.log('测试', todo)
+    // Vuex
+    console.log('vuex', this.type)
+    this.SET_TYPE('测试')
+    console.log('vuex', this.type)
   },
   components: {
     'module-article-scroll-page': () => import('~/modules/article/ArticleScrollPage.vue')

@@ -44,7 +44,10 @@ module.exports = {
       // 'service': resolve('src/service'),
       'utils': resolve('src/utils'),
       '$config': resolve('src/config'),
-      '$ajax': resolve('src/service/ajax')
+      '$ajax': resolve('src/service/ajax'),
+      '$actions': resolve('src/vuex/type/actions.js'),
+      '$getters': resolve('src/vuex/type/getters.js'),
+      '$mutations': resolve('src/vuex/type/mutations.js')
     }
   },
   module: {

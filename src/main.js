@@ -11,9 +11,11 @@ import '@/assets/theme/index.css'
 import '@/assets/icon/iconfont.css'
 import 'mavon-editor/dist/css/index.css'
 import mavonEditor from 'mavon-editor'
+import store from '@/vuex/store.js'
 import config from '$config'
 Vue.use(mavonEditor)
 Vue.use(ElementUI)
+
 Vue.config.productionTip = false
 // 加载测试数据，正式环境或者联调时去除！
 if (config.enableMock) {
@@ -24,7 +26,7 @@ require('@/leancloud/leancloud-data.js')
 new Vue({
   el: '#app',
   router,
-  // store,
+  store,
   components: { App },
   template: '<App/>'
 })

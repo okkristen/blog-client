@@ -5,6 +5,9 @@ AV.init({
   appId: config.appId,
   appKey: config.appKey
 })
+// 初始化查询对象以及创建对象
+// AV.Object.extend('Article')
+// new AV.Query('Article')
 // var { Query, User } = AV
 // console.log('Query, User', Query, User)
 // 实时消息服务
